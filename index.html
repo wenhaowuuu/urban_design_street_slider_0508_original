@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Before-After Slider</title>
+  <link href="css/foundation.css" rel="stylesheet" type="text/css" />
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+</head>
+  <body>
+
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-6 columns">
+        <h3>Historic Change along North First Street</h3>
+        <p>Before and after comparison.</p>
+      </div>
+      <div class="large-12 columns">
+        <div class="twentytwenty-container">
+          <!-- <img src="img/street_before.jpg" />
+          <img src="img/street_after.jpg" /> -->
+
+          <!-- <img src="img/SJ-1953.jpg" /> -->
+          <img src="img/SJ-2000.jpg" />
+
+          <img src="img/SJ-2018.jpg" />
+
+        </div>
+        <br>
+        <br>
+        <div class="twentytwenty-container">
+          <!-- <img src="img/street_before.jpg" />
+          <img src="img/street_after.jpg" /> -->
+
+          <img src="img/ZONING.JPG" />
+
+          <img src="img/LANDUSE.JPG" />
+
+        </div>
+
+
+      </div>
+      <div class="large-6 columns" style="position: relative; width: 50%;">
+        <!-- <h3>Frankford Avenue Streetscape Improvement</h3> -->
+        <p style="font-family: Arial; font-weight:100;">Downtown San Jose is the central business district of San Jose, California, in Silicon Valley. It is the largest urban center of Silicon Valley. Downtown is one of the largest tech clusters in Silicon Valley, as well as the cultural and political center of San Jose.</p>
+      </div>
+      <div class="large-6 columns" style="position: relative; width: 50%;">
+        <!-- <h3>Frankford Avenue Streetscape Improvement</h3> -->
+        <p style="font-family: Arial; font-weight:100;">North San Jose is the northern region of San Jose, California in Silicon Valley. North San Jose includes the communities of Alviso and Berryessa as well as the North San Jose Innovation District. It lends its name to the future Berryessa/North San Jose BART station. Neighborhoods within North San Jose.</p>
+      </div>
+    </div>
+
+
+    <!-- <div class="row" style="margin-top: 2em;">
+      <div class="large-4 columns">
+        <h3>Creek Street Improvement</h3>
+        <p>Before and after comparison.</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/street_before.jpg" />
+          <img src="img/street_after.jpg" />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-4 columns">
+        <h3>Infill Development</h3>
+        <p>Before and after comparison.</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/gallery_before.jpg" />
+          <img src="img/gallery_after.jpg" />
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- <div class="row" style="margin-top: 2em; margin-bottom: 2em;">
+      <div class="large-4 columns">
+        <h3>Vertical Orientation</h3>
+        <p>Demonstrates sliding up and down.</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container" data-orientation="vertical">
+          <img src="img/1_1.jpg" />
+          <img src="img/1_2.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 2em;">
+      <div class="large-4 columns">
+        <h3>Side by side</h3>
+        <p>Using multiple comparisons at once.</p>
+      </div>
+      <div class="large-4 columns">
+        <div class="twentytwenty-container">
+          <img src="img/2_1.jpg" />
+          <img src="img/2_2.jpg" />
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="twentytwenty-container">
+          <img src="img/3_1.jpg" />
+          <img src="img/3_2.jpg" />
+        </div>
+      </div>
+    </div> -->
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+    $(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+    });
+    </script>
+  </body>
+</html>
